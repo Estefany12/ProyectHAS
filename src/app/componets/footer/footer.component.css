@@ -1,0 +1,10 @@
+#sticky-footer {
+   flex-shrink: none;
+ 
+ }
+ footer {
+  width: 100%;
+  max-height:95px;
+  overflow-x: scroll;
+  margin-top:5px;
+}

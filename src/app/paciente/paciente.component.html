@@ -1,0 +1,57 @@
+
+<div class="container">
+
+<div class="card  mb-3">
+    
+    <div class="card-header">Listado de Pacientes</div>
+    <div class="card-body">
+      
+      <div class="my-2 text-left">
+          <button class="btn btn-rounded btn-primary" type="button"  [routerLink]="['/pacientes/form']">Crear Paciente</button>
+      </div>
+      <table class="table table-bordered table-striped">
+        <thead style="text-align:center;">
+            <tr>
+                <th>Id</th>
+                <th style="width:60px;height:20px;">Nombre</th>
+                <th>NSS</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th style="width: auto;">Domicilio</th>
+                <th>Telefono</th>
+                <th style="background:white;border: hidden;"></th>
+                <th style="background:#ADD8E6;color: #5F9EA0;">            
+                    Funciones
+                   
+                </th> 
+               
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let paciente of pacientes">
+                <td>{{paciente.id}}</td>
+                <td>{{paciente.nombre}}</td>
+                <td>{{paciente.nss}}</td>
+                <td>{{paciente.edad}}</td>
+                <td>{{paciente.sexo}}</td>
+                <td>{{paciente.domicilio}}</td>
+                <td>{{paciente.telefono}}</td>
+                <td style="background:white;border: hidden;"></td>
+                <td style="background:#F8F8FF;">
+                    <button type="button" name="editar" [routerLink]="['/pacientes/form', paciente.id]" class="btn btn-primary">editar</button>
+                
+                    <button type="button" name="eliminar" (click)='delete(paciente)'  class="btn btn-danger">eliminar</button>
+               
+                    <button type="button" name="eliminar" (click)='delete(paciente)'  class="btn btn-danger">expediente</button>
+                </td>
+              
+                
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+  </div>
+
+</div>

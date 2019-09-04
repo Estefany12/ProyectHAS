@@ -1,0 +1,14 @@
+html{
+    position: relative;
+    min-height: 100%;
+   
+
+}
+body{
+    width:1340px; /*manten el ancho que necesitas*/
+    /*y elimina el height, de esta manera el div ira creciendo en base a la cantidad de fotos*/
+    max-height:95px;
+    overflow-x: scroll;
+    margin-top:5px;
+}
+

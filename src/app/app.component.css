@@ -1,0 +1,27 @@
+#footer1{
+position: absolute;
+  bottom: 0;
+  height: 40px;
+  color: white;
+}
+app-header{
+  padding-top:0px;
+  display: inline;
+}
+
+
+#header {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  position:inline;
+}
+.container{
+  background-color: blueviolet;
+  width: auto;
+}
+app-header{
+  width: 100%;
+}
+
+ 

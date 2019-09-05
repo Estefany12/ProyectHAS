@@ -19,6 +19,7 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { PacienteComponent } from './paciente/paciente.component';
 import { FormComponent } from './paciente/form.component';
 import {RouterModule,Routes} from '@angular/router';
+import { InicioComponent } from './componets/inicio/inicio.component';
 
 
 const routes:Routes =[
@@ -45,7 +46,8 @@ const routes:Routes =[
     LibrosDetailComponent,
     DirectivaComponent,
     PacienteComponent,
-    FormComponent],
+    FormComponent,
+    InicioComponent],
   
   providers: [],
   

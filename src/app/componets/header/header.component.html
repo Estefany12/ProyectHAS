@@ -1,19 +1,25 @@
-<nav class="navbar navbar-expand-md navbar-light margin-0 "  style="background-color: #999999">
-    <a class="navbar-brand" href="#">IMSS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-light nav-justified "  style="background-color: #ccc9c9">
+    <a class="navbar-brand" >IMSS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        
-        <li class="nav-item" routerLinkActive="active" >
-          <a class="nav-link" routerLink="/directivas">Reportes</a>
+      <ul class="nav navbar-nav pull-xs-right">
+        <li class="nav-item" routerLinkActive="active">
+          <button type="button" class="btn btn-outline-light" style="background-color: #0f7c6a"  routerLink="/Inicio">Inicio</button>
         </li>
         <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/pacientes">Pacientes</a>
+            <button type="button" class="btn btn-outline-light" style="background-color: #0f7c6a"  routerLink="/pacientes">Expedinte</button>
           </li>
-      
+        <li class="nav-item" routerLinkActive="active">
+          <button type="button" class="btn btn-outline-light" style="background-color: #0f7c6a"  routerLink="/pacientes">Registro</button>
+        </li>
+         
+        <li class="navbar-nav " routerLinkActive="active">
+          <button type="button" class="btn btn-primary pull-right"  style="float: right" style="background-color: #0f7c6a"  routerLink="/login">Sign In</button>
+        </li>
+    
       </ul>
       
     </div>
